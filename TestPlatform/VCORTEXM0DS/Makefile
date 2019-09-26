@@ -2,7 +2,7 @@ PACKAGE    = VCORTEXM0DS
 BUILDFLAGS = -g3 -fPIC  -Wall -W -pedantic -Wno-long-long -Wwrite-strings -Wpointer-arith 
 CXX        = g++ 
 CXXFLAGS = -fPIC -I$(SYSTEMC_INCLUDE) -I/usr/local/share/verilator/include/ -I/usr/local/share/verilator/include/vltstd
-LDFLAGS  = -Wl,--export-dynamic
+LDFLAGS  = -Wl,-export_dynamic
 COMMON_LIBS = -L$(SYSTEMC_LIBDIR) -lsystemc
 
 PACKAGE_SOURCES =   VCORTEXM0DS.cpp \

@@ -7,7 +7,7 @@
 SYSTEMC_INCLUDE=$HOME/workspace/Install/systemc231/include
 export SYSTEMC_INCLUDE
 
-SYSTEMC_LIBDIR=$HOME/workspace/Install/systemc231/lib-linux64
+SYSTEMC_LIBDIR=$HOME/workspace/Install/systemc231/lib-macosx64
 export SYSTEMC_LIBDIR
 
 LD_LIBRARY_PATH=$SYSTEMC_LIBDIR:$LD_LIBRARY_PATH

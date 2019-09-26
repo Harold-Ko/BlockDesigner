@@ -1198,7 +1198,7 @@ int BDWriter::createMakeFile() {
 	}
 	fout << endl;
 
-	fout << "LDFLAGS  = -Wl,--export-dynamic" << endl;
+	fout << "LDFLAGS  = -Wl,-export_dynamic" << endl;
 	fout << "COMMON_LIBS = -L$(SYSTEMC_LIBDIR) -lsystemc";
 	if(strcmp(pm_module->getType(), "scv") == 0) {
 		fout << " -L$(SCV_LIBDIR) -lscv";
